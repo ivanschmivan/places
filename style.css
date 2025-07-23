@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  color: #eee;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#overlayText {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  z-index: 1;
+  pointer-events: none;
+  font-family: monospace;
+}
