@@ -105,8 +105,8 @@ function setup() {
   // Initialize p5.js canvas
   createCanvas(windowWidth, windowHeight);
   textFont("monospace"); // Set font for the sketch
-  noStroke(); // No outlines for shapes
-  // Use lowlightColor for initial background
+  noStroke(); 
+  
   background(lowlightColor); 
 
   // Attempt to resume AudioContext and start microphone
@@ -239,8 +239,7 @@ async function generateImageFromPrompt(prompt) {
 
 // Main draw loop for p5.js
 function draw() {
-  // Use lowlightColor for background
-
+  
   background(lowlightColor); 
 
   // Handle character scrambling effect
