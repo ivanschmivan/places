@@ -125,16 +125,6 @@ function setup() {
 
   isImageReady = true; // Indicate that the image is ready to be displayed
 
-  // Call draw() once immediately after setup is complete to render the initial state.
-  // This ensures createCanvas() has run and p5.js drawing functions are available.
-  //draw();
-
-
-  //FIX ATTEMPT
-  if (img) {
-  img.loadPixels(); // Ensure pixels are available after setup
-  }
-
    // Initialize speech recognition
   speechRec = new p5.SpeechRec('en-US', gotSpeech); // Create speech recognition object
   speechRec.continuous = true; // Keep listening continuously
